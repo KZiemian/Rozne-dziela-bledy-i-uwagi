@@ -1,0 +1,17 @@
+# ignore all PDF files
+*.pdf
+
+# ignore auxiliary files created by pdfLaTeX
+*.aux
+*.log
+*.out
+
+# ignore auxiliary files created by BibTeX
+*.bbl
+*.blg
+
+# ignore Emacs backups files
+*~
+
+# ignore auxiliary catalogs
+auto/

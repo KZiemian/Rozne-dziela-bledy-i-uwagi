@@ -1,6 +1,6 @@
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 % Podstawowe ustawienia i pakiety
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 \RequirePackage[l2tabu, orthodox]{nag} % Wykrywa przestarzałe i niewłaściwe
 % sposoby używania LaTeXa. Więcej jest w l2tabu English version.
 \documentclass[a4paper,11pt]{article}
@@ -14,9 +14,9 @@
 
 
 
-% ----------------------------
+% ------------------------------
 % Podstawowe pakiety (niezwiązane z ustawieniami języka)
-% ----------------------------
+% ------------------------------
 \usepackage{microtype} % Twierdzi, że poprawi rozmiar odstępów w tekście.
 \usepackage{graphicx} % Wprowadza bardzo potrzebne komendy do wstawiania
 % grafiki.
@@ -25,18 +25,18 @@
 % wprowadzane bezpośrednio w tekście.
 \usepackage{vmargin} % Pozwala na prostą kontrolę rozmiaru marginesów,
 % za pomocą komend poniżej. Rozmiar odstępów jest mierzony w calach.
-% ----------------------------
+% ------------------------------
 % MARGINS
-% ----------------------------
+% ------------------------------
 \setmarginsrb
-{ 0.7in} % left margin
-{ 0.6in} % top margin
-{ 0.7in} % right margin
-{ 0.8in} % bottom margin
-{  20pt} % head height
-{0.25in} % head sep
-{   9pt} % foot height
-{ 0.3in} % foot sep
+{ 0.7in}  % left margin
+{ 0.6in}  % top margin
+{ 0.7in}  % right margin
+{ 0.8in}  % bottom margin
+{  20pt}  % head height
+{0.25in}  % head sep
+{   9pt}  % foot height
+{ 0.3in}  % foot sep
 
 
 
@@ -80,18 +80,20 @@
 
 
 
-% ----------------------------
+% ------------------------------
 % Pakiety napisane przez użytkownika.
 % Mają być w tym samym katalogu to ten plik .tex
-% ----------------------------
+% ------------------------------
 \usepackage{latexgeneralcommands}
 % \usepackage{mathshortcuts}
 
 
 
-% ----------------------------
+% ------------------------------
 % Ustawienia różnych parametrów tekstu
-% ----------------------------
+% ------------------------------
+\renewcommand{\baselinestretch}{1.1}
+
 \renewcommand{\arraystretch}{1.2} % Ustawienie szerokości odstępów między
 % wierszami w tabelach.
 
@@ -116,9 +118,11 @@
 % ---------------------------------------------------------------------
 % Tytuł i autor tekstu
 \title{Komiksy, powieści graficzne \\
-  Błędy i~uwagi}
+  {\Large Błędy i~uwagi}}
 
 \author{Kamil Ziemian}
+
+
 % \date{}
 % ---------------------------------------------------------------------
 
@@ -157,14 +161,15 @@
 % ##############################
 \Work{ % Autor i tytuł dzieła
   Will Eisner \\
-  „Spirit. Najlepsze opowieści”, \cite{EisnerSpirit2009} }
+  \textit{Spirit. Najlepsze opowieści}, \cite{EisnerSpirit2009}}
 
 
 % ##################
 \CenterBoldFont{Błędy}
 
 
-\start \textbf{Str. 13, obrazek w~lewym górnym roku.}
+\noindent
+\textbf{Str. 13, obrazek w~lewym górnym roku.}
 
 % \begin{center}
 %   \begin{tabular}{|c|c|c|c|c|}
@@ -207,8 +212,8 @@
 % ############################
 \Work{ % Autor i tytuł dzieła
   Will Eisner \\
-  „Życie w~obrazkach. Opowieści autobiograficzne”,
-  \cite{EisnerZycieWObrazkach2009} }
+  \textit{Życie w~obrazkach. Opowieści autobiograficzne},
+  \cite{EisnerZycieWObrazkach2009}}
 
 
 % ##################
@@ -236,6 +241,7 @@
 % ####################################################################
 % ####################################################################
 % Bibliografia
+
 \bibliographystyle{plalpha}
 
 \bibliography{VisualArtsBooks}{}

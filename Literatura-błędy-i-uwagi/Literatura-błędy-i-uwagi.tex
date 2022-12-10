@@ -1,6 +1,6 @@
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 % Podstawowe ustawienia i pakiety
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 \RequirePackage[l2tabu, orthodox]{nag} % Wykrywa przestarzałe i niewłaściwe
 % sposoby używania LaTeXa. Więcej jest w l2tabu English version.
 \documentclass[a4paper,11pt]{article}
@@ -14,9 +14,9 @@
 
 
 
-% ----------------------------
+% ------------------------------
 % Podstawowe pakiety (niezwiązane z ustawieniami języka)
-% ----------------------------
+% ------------------------------
 \usepackage{microtype} % Twierdzi, że poprawi rozmiar odstępów w tekście.
 \usepackage{graphicx} % Wprowadza bardzo potrzebne komendy do wstawiania
 % grafiki.
@@ -25,25 +25,24 @@
 % wprowadzane bezpośrednio w tekście.
 \usepackage{vmargin} % Pozwala na prostą kontrolę rozmiaru marginesów,
 % za pomocą komend poniżej. Rozmiar odstępów jest mierzony w calach.
-% ----------------------------
+% ------------------------------
 % MARGINS
-% ----------------------------
+% ------------------------------
 \setmarginsrb
-{ 0.7in} % left margin
-{ 0.6in} % top margin
-{ 0.7in} % right margin
-{ 0.8in} % bottom margin
-{  20pt} % head height
-{0.25in} % head sep
-{   9pt} % foot height
-{ 0.3in} % foot sep
+{ 0.7in}  % left margin
+{ 0.6in}  % top margin
+{ 0.7in}  % right margin
+{ 0.8in}  % bottom margin
+{  20pt}  % head height
+{0.25in}  % head sep
+{   9pt}  % foot height
+{ 0.3in}  % foot sep
 
 
 
 % ------------------------------
 % Często używane pakiety
 % ------------------------------
-\usepackage{csquotes} % Pozwala w prosty sposób wstawiać cytaty do tekstu.
 \usepackage{xcolor} % Pozwala używać kolorowych czcionek (zapewne dużo
 % więcej, ale ja nie potrafię nic o tym powiedzieć).
 
@@ -70,9 +69,9 @@
 
 
 
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 % Dodatkowe ustawienia dla języka polskiego
-% --------------------------------------------------------------------
+% ---------------------------------------------------------------------
 \renewcommand{\thesection}{\arabic{section}.}
 % Kropki po numerach rozdziału (polski zwyczaj topograficzny)
 \renewcommand{\thesubsection}{\thesection\arabic{subsection}}
@@ -80,27 +79,29 @@
 
 
 
-% ----------------------------
+% ------------------------------
 % Pakiety napisane przez użytkownika.
 % Mają być w tym samym katalogu to ten plik .tex
-% ----------------------------
+% ------------------------------
 \usepackage{latexgeneralcommands}
 % \usepackage{mathshortcuts}
 
 
 
-% ----------------------------
+% ------------------------------
 % Ustawienia różnych parametrów tekstu
-% ----------------------------
+% ------------------------------
+\renewcommand{\baselinestretch}{1.1}
+
 \renewcommand{\arraystretch}{1.2} % Ustawienie szerokości odstępów między
 % wierszami w tabelach.
 
 
 
-% ----------------------------
-% Pakiet "hyperref"
+% ------------------------------
+% Pakiet „hyperref”
 % Polecano by umieszczać go na końcu preambuły.
-% ----------------------------
+% ------------------------------
 \usepackage{hyperref} % Pozwala tworzyć hiperlinki i zamienia odwołania
 % do bibliografii na hiperlinki.
 
@@ -116,9 +117,11 @@
 % ---------------------------------------------------------------------
 % Tytuł tekstu
 \title{Literatura \\
-  Błędy i~uwagi}
+  {\Large Błędy i~uwagi}}
 
-% \author{}
+\author{Kamil Ziemian}
+
+
 % \date{}
 % ---------------------------------------------------------------------
 
