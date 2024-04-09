@@ -1,0 +1,221 @@
+% ---------------------------------------------------------------------
+% Basic configuration and packages
+% ---------------------------------------------------------------------
+% Package for discovering wrong and outdated usage of LaTeX.
+% More information to be found in l2tabu English version.
+\RequirePackage[l2tabu, orthodox]{nag}
+% Class of LaTeX document: {size of paper, size of font}[document class]
+\documentclass[a4paper,11pt]{article}
+
+
+
+% ---------------------------------------
+% Packages not tied to particular normal language
+% ---------------------------------------
+% This package should improved spaces in the text.
+\usepackage{microtype}
+% Add few important symbols, like text Celcius degree
+\usepackage{textcomp}
+
+
+
+% ---------------------------------------
+% Polonization of LaTeX document
+% ---------------------------------------
+% Basic polonization of the text
+\usepackage[MeX]{polski}
+% Switching on UTF-8 encoding
+\usepackage[utf8]{inputenc}
+% Adding font Latin Modern
+\usepackage{lmodern}
+% Package is need for fonts Latin Modern
+\usepackage[T1]{fontenc}
+
+
+
+% ---------------------------------------
+% Setting margins
+% ---------------------------------------
+\usepackage[a4paper, total={14cm, 25cm}]{geometry}
+
+
+
+% ---------------------------------------
+% Setting vertical spaces in the text
+% ---------------------------------------
+% Setting space between lines
+\renewcommand{\baselinestretch}{1.1}
+
+% Setting space between lines in tables
+\renewcommand{\arraystretch}{1.4}
+
+
+
+
+
+% ------------------------------
+% Private packages
+% You need to put them in the same directory as .tex file
+% ------------------------------
+% Contains various command useful for working with a text
+\usepackage{latexgeneralcommands}
+
+
+
+
+
+% ------------------------------
+% Package ``hyperref''
+% They advised to put it on the end of preambule
+% ------------------------------
+% It allows you to use hyperlinks in the text
+\usepackage{hyperref}
+
+
+
+
+
+
+
+
+
+
+% ---------------------------------------------------------------------
+% Tytuł i autor tekstu
+\title{Komiksy, powieści graficzne \\
+  {\Large Błędy i~uwagi}}
+
+\author{Kamil Ziemian}
+
+
+% \date{}
+% ---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+% ####################################################################
+% Początek dokumentu
+\begin{document}
+% ####################################################################
+
+
+
+
+
+% ######################################
+\maketitle % Tytuł całego tekstu
+% ######################################
+
+
+
+
+
+% ######################################
+\section{Komiksy}
+% ######################################
+
+
+
+% ##############################
+\Work{ % Autor i tytuł dzieła
+  Will Eisner \\
+  \textit{Spirit. Najlepsze opowieści}, \cite{EisnerSpirit2009}}
+
+
+% ##################
+\CenterBoldFont{Błędy}
+
+
+\noindent
+\textbf{Str. 13, obrazek w~lewym górnym roku.}
+
+% \begin{center}
+%   \begin{tabular}{|c|c|c|c|c|}
+%     \hline
+%     & \multicolumn{2}{c|}{} & & \\
+      %       Strona & \multicolumn{2}{c|}{Wiersz} & Jest
+% & Powinno być \\ \cline{2-3}
+      %       & Od góry & Od dołu & & \\
+% \hline
+%     & & & & \\
+%     & & & & \\
+%     & & & & \\
+%     & & & & \\ \hline
+%   \end{tabular}
+% \end{center}
+% \noi \\
+% \tb{Str. 13, obrazek w~lewym górnym roku.} \\
+% \Jest stronie 68 \\
+% \Pow stronie 62 \\
+
+
+\vspace{\spaceTwo}
+% ############################
+
+
+
+
+
+
+
+
+
+
+% ######################################
+\section{Powieści graficzne}
+% ######################################
+
+
+
+% ############################
+\Work{ % Autor i tytuł dzieła
+  Will Eisner \\
+  \textit{Życie w~obrazkach. Opowieści autobiograficzne},
+  \cite{EisnerZycieWObrazkach2009}}
+
+
+% ##################
+\CenterBoldFont{Błędy}
+
+
+\noindent \\
+\textbf{Str. 92, I kolumna, wiersz 27.} \\
+\Jest  stronie 68 \\
+\Powin stronie 62 \\
+
+
+\vspace{\spaceTwo}
+% ############################
+
+
+
+
+
+
+
+
+
+
+% ####################################################################
+% ####################################################################
+% Bibliografia
+
+\bibliographystyle{plalpha}
+
+\bibliography{VisualArtsBooks}{}
+
+
+
+
+
+% ############################
+
+% Koniec dokumentu
+\end{document}
