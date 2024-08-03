@@ -51,34 +51,6 @@
 
 
 
-% ------------------------------------------------------
-% Packages for scientific papers
-% ------------------------------------------------------
-% Switching off \lll symbol, that I guess is representing letter "Ł"
-% It collide with `amsmath' package's command with the same name
-\let\lll\undefined
-% Basic package from American Mathematical Society (AMS)
-\usepackage[intlimits]{amsmath}
-% Equations are numbered separately in every section
-\numberwithin{equation}{section}
-
-% Other very useful packages from AMS
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amscd}
-\usepackage{amsthm}
-
-% Package with better looking calligraphy fonts
-\usepackage{calrsfs}
-
-% Package with better looking greek letters
-% Example of use: pi -> \uppi
-\usepackage{upgreek}
-% Improving look of lambda letter
-\let\oldlambda\Lambda
-\renewcommand{\lambda}{\uplambda}
-
-
 
 
 % ------------------------------------------------------
@@ -94,7 +66,7 @@ url=false,
 eprint=true,
 ]{biblatex}
 
-\addbibresource{Eseje-publicystyka-etc-Bibliography.bib}
+\addbibresource{Komiksy-powiesci-graficzne-Bibliography.bib}
 
 
 
@@ -179,7 +151,8 @@ eprint=true,
 % ##############################
 \section{ % Autor i tytuł dzieła
   Will Eisner \\
-  \textit{Spirit. Najlepsze opowieści}, \cite{EisnerSpirit2009}}
+  \textit{Spirit. Najlepsze opowieści},
+  \parencite{Eisner-Spirit-Najlepsze-opowiesci-Pub-2009}}
 
 
 % ##################
